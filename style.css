@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  color: #1f2937;
+  background: #f8fafc;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background: linear-gradient(135deg, #111827, #1e3a8a);
+  color: #ffffff;
+  padding: 56px 20px 44px;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  margin: 0 0 14px;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  max-width: 760px;
+  font-size: 18px;
+  margin: 0;
+  color: #dbeafe;
+}
+
+nav {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 14px 20px;
+}
+
+nav a {
+  color: #1d4ed8;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+main {
+  padding: 32px 20px 60px;
+}
+
+article {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+}
+
+h2 {
+  margin-top: 36px;
+  margin-bottom: 12px;
+  font-size: 28px;
+  color: #111827;
+}
+
+h3 {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #1f2937;
+}
+
+p {
+  margin: 0 0 16px;
+  font-size: 17px;
+}
+
+ul {
+  margin: 0 0 16px 20px;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.info-box {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 14px;
+  padding: 20px;
+  margin: 24px 0;
+}
+
+.info-box strong {
+  color: #1e3a8a;
+}
+
+footer {
+  padding: 28px 20px 50px;
+  color: #6b7280;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  article {
+    padding: 22px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p,
+  li {
+    font-size: 16px;
+  }
+}
