@@ -253,19 +253,22 @@ section {
 
 .gallery-grid {
   display: flex;
+  flex-wrap: nowrap;
   gap: 18px;
   overflow-x: auto;
   overflow-y: hidden;
+  width: 100%;
   padding-bottom: 12px;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
 
 .gallery-grid img {
-  width: 220px;
-  height: 420px;
+  width: 320px;
+  height: 180px;
   flex: 0 0 auto;
   object-fit: cover;
+  object-position: center;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   border-radius: 16px;
