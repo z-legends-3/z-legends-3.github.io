@@ -462,10 +462,14 @@ section {
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr 1fr;
-  gap: 24px;
+  display: flex;
+  justify-content: center;
   padding-bottom: 26px;
+}
+
+.footer-main {
+  max-width: 460px;
+  text-align: center;
 }
 
 .footer-logo {
@@ -473,6 +477,11 @@ section {
   font-weight: 800;
   color: #fff;
   margin-bottom: 12px;
+}
+
+.footer-main p {
+  margin: 0;
+  color: #cbd5e1;
 }
 
 .site-footer h4 {
@@ -495,6 +504,7 @@ section {
   padding: 18px 0 26px;
   color: #94a3b8;
   font-size: 0.94rem;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
