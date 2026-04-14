@@ -456,55 +456,28 @@ section {
 
 .site-footer {
   margin-top: 24px;
-  padding-top: 36px;
   background: #0f172a;
   color: #e5e7eb;
 }
 
-.footer-grid {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 26px;
-}
-
-.footer-main {
-  max-width: 460px;
-  text-align: center;
-}
-
-.footer-logo {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: #fff;
-  margin-bottom: 12px;
-}
-
-.footer-main p {
-  margin: 0;
-  color: #cbd5e1;
-}
-
-.site-footer h4 {
-  margin: 0 0 14px;
-  color: #fff;
-}
-
-.site-footer a {
-  display: block;
-  color: #cbd5e1;
-  margin-bottom: 10px;
-}
-
-.site-footer a:hover {
-  color: #fff;
-}
-
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 18px 0 26px;
+  padding: 18px 0;
   color: #94a3b8;
   font-size: 0.94rem;
   text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
 }
 
 @media (max-width: 1024px) {
