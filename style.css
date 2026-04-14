@@ -1,3 +1,4 @@
+```css
 :root {
   --bg: #f4f7fb;
   --surface: #ffffff;
@@ -100,7 +101,7 @@ a {
 }
 
 .breadcrumb-section {
-  padding: 20px 0 0;
+  display: none;
 }
 
 .breadcrumb {
@@ -121,7 +122,7 @@ a {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 220px 1fr;
   gap: 32px;
   align-items: center;
   background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
@@ -133,9 +134,12 @@ a {
 
 .hero-thumb img {
   width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
   aspect-ratio: 1 / 1;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 24px;
+  display: block;
 }
 
 .badge {
@@ -248,17 +252,41 @@ section {
 }
 
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   gap: 18px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 12px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 .gallery-grid img {
-  width: 100%;
-  aspect-ratio: 10 / 18;
+  width: 220px;
+  height: 420px;
+  flex: 0 0 auto;
   object-fit: cover;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
+  border-radius: 16px;
+}
+
+.gallery-grid::-webkit-scrollbar {
+  height: 10px;
+}
+
+.gallery-grid::-webkit-scrollbar-track {
+  background: #111827;
+  border-radius: 999px;
+}
+
+.gallery-grid::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 999px;
+}
+
+.gallery-grid::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
 }
 
 .info-grid {
@@ -500,10 +528,6 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .sidebar-card {
     position: static;
   }
@@ -540,15 +564,28 @@ section {
 
   .hero-grid {
     padding: 22px;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-thumb img {
+    max-width: 180px;
   }
 
   .app-table > div {
     grid-template-columns: 1fr;
   }
 
-  .feature-grid,
-  .gallery-grid {
+  .feature-grid {
     grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    gap: 14px;
+  }
+
+  .gallery-grid img {
+    width: 180px;
+    height: 340px;
   }
 
   .hero-actions {
