@@ -226,11 +226,11 @@ a {
 }
 
 section {
-  padding: 22px 0 56px;
+  padding: 10px 0 20px;
 }
 
 .section-head {
-  margin-bottom: 22px;
+  margin-bottom: 8px;
 }
 
 .section-head h2,
@@ -254,7 +254,7 @@ section {
   width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
-  padding: 6px 0 14px;
+  padding: 0 0 4px;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
